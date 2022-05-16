@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'royal';
+    src: url('fonts/blkchcry-webfont.woff2') format('woff2'),
+         url('fonts/blkchcry-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --bg-color:#ccd2d836;
+    --t-color: #000000c4;
+    --cool-font: "royal", monospace;
+    /*--header:3rem;
+    --footer:3rem;
+    --main: calc(100vh- calc(var(--header)+ var(--footer)));*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--t-color);
+    background-color: var(--bg-color);
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+
+    display: flex;
+    flex-direction: column;
+    /*align-items:center;*/
+    justify-content: space-between;
+}
+header,footer{
+    display: flex;
+    flex: 1 1 auto;
+
+    background-color: #000000;
+    color: white;
+    height: 10vh;
+    width:100%;
+}
+header{
+    margin-bottom: auto;
+}
+footer{
+    margin-top: auto;
+}
+main{
+    display: flex;
+}
+.left{
+    height:80vh;
+    width: 50vw;
+    /*background-image: linear-gradient(to bottom, rgba(231, 238, 134, 0.705),rgb(0, 255, 179),rgba(206, 235, 126, 0.705)),url(images/edward-howell-o1Da0mRNBjQ-unsplash.jpg);*/
+    background-image: url(images/heather-barnes-GRM_gA48RAY-unsplash.jpg);
+    background-color: aquamarine; /*Used if image is unavailable*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.logo-box{
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    justify-content:center;
+    background-color:#0000004d;
+    margin-top: 55vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.logo{
+    width: 8vw;
+    height: auto;
+    display: inline-block;
+}
+.logo-box h1{
+    font : 2.5rem var(--cool-font);
+    padding-top: 2vh;
+    padding-right: 3vw;
+    overflow: none;
+}
+.logo-box p{
+    font: 1rem var(--cool-font);
+    display:block;
+    margin-top: 1vh;
+
+}
+.credit-bg, .credit-logo{
+    /*margin-top: 1vh;*/
+    
+    justify-self:;
+}

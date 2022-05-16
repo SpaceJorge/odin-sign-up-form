@@ -4,34 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        #darkness envelops me
+        
     </header>
     <main>
-        <div class="left">
-            <img class="logo"src="" alt="">
-            <div class="credit">it is i, Juan Carlos, who did the image, arent you amazed?</div>
-            #image background with logo
+        <div class="left"> 
+            <div class="logo-box">
+                <h1>Nobily Tea</h1>
+                <img class="logo" src="images/cup-149682.svg" alt="NobiliTea, snob mailling about tea and wealthy tea drinkers."> 
+                <p>Needlessly expensive tea lifestyle.</p>
+            </div>
+            
+            <div class="credit-bg">Image by <a href="https://unsplash.com/@heatherbarnes">Heather Barnes</a>.</div>
+            <div class="credit-logo">Logo by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=149682">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=149682">Pixabay</a></div>
+            
         </div>
         <div class="right">
             #form stuff
             <div class="top">
-
+                <h2>Join now our snob mailling list about tea and wealthy tea drinkers.</h2>
+                <p>Get to know everything about tasteless tea that smells nice and awful people who think they are right.</p>
             </div>
             <div class="mid">
-                <form action=""></form>
+                <form class="sign-up-form" action="" method='post'>
+                    <div class='form-row'>
+                    
+                        <h3>Let's Do This!</h3>
+                        <label for='first-name'>First Name</label>
+                        <input id='first-name' name='first-name' type='text'placeholder='Juan Carlos'/>
+                        <label for='last-name'>Last Name</label>
+                        <input id='last-name' name='last-name' type='text' placeholder='Petela'/>
+                    
+                    </div>
+                    <div class='form-row'>
+                        <label for='email'>Email</label>
+                        <input id='email'
+                               name='email'
+                               type='email'
+                               placeholder='jcp@example.com'
+                               required />
+                        <label for='tel'>Phone Number</label>
+                        <input  id='tel'
+                                name='tel'
+                                type='tel'
+                                placeholder='1234'/>
+                    </div>
+                    <div class='form-row'>
+                        <label for='password'>Password <abbr title="required" aria-label="required">*</abbr> </label>
+                        <input id='password' name='password' type='password'/>
+                        <label for='confirm-password'>Confirm password</label>
+                        <input id='confirm-password' name='confirm-password' type='password'/>
+                    </div>
+                </form>
             </div>
             <div class="bot">
-                <button class="maybeIShoudntExist"></button>
+                <button class="btn" type="submit">Submit</button>
                 <p>Already have an account? <a>Log In</a>, or not, I dont care, make another one, what do you think im built for, logical usability?</p>
             </div>
         </div>
     </main>
     <footer>
-        #darkness envelops me
+        
     </footer>
 </body>
 </html>
