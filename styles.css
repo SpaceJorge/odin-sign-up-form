@@ -24,7 +24,7 @@
 body {
     color: var(--t-color);
     background-color: var(--bg-color);
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Times New Roman", sans-serif;
     font-size: 16px;
     line-height: 1.3;
 
@@ -35,32 +35,44 @@ body {
 }
 header,footer{
     display: flex;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
 
     background-color: #000000;
     color: white;
     height: 10vh;
     width:100%;
 }
+/*
 header{
     margin-bottom: auto;
 }
 footer{
     margin-top: auto;
 }
+*/
 main{
     display: flex;
+    flex: 1 1 auto;
+    max-height: 80vh;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .left{
-    height:80vh;
-    width: 50vw;
+    
+    width: min(60vw,500px);
+    font: 1rem "times new roman";
     /*background-image: linear-gradient(to bottom, rgba(231, 238, 134, 0.705),rgb(0, 255, 179),rgba(206, 235, 126, 0.705)),url(images/edward-howell-o1Da0mRNBjQ-unsplash.jpg);*/
     background-image: url(images/heather-barnes-GRM_gA48RAY-unsplash.jpg);
     background-color: aquamarine; /*Used if image is unavailable*/
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
     background-size: cover;
     text-align: center;
+    max-height: 80vh;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 .logo-box{
     display: flex;
@@ -68,17 +80,20 @@ main{
     flex-wrap: wrap;
     justify-content:center;
     background-color:#0000004d;
+    position: relative;
+
     margin-top: 55vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
 .logo{
-    width: 8vw;
+    width: 9vh;
     height: auto;
     display: inline-block;
 }
 .logo-box h1{
-    font : 2.5rem var(--cool-font);
+    font : 3rem var(--cool-font);
+    text-shadow: 1px 1px 2px pink;
     padding-top: 2vh;
     padding-right: 3vw;
     overflow: none;
@@ -89,8 +104,86 @@ main{
     margin-top: 1vh;
 
 }
+/*
 .credit-bg, .credit-logo{
-    /*margin-top: 1vh;*/
+   margin-top: 1vh;
     
-    justify-self:;
+    justify-self: ;
+}*/
+.right{
+    padding: 5% 0% 5% 0%;
+    font: 1rem "times new roman";
+    
+}
+.top h2{
+    font: 2rem var(--cool-font);
+    text-align: center;
+    padding: 2%;
+    text-shadow: 1px 1px 2px pink;
+    
+}
+.top p{
+    text-align: center;
+    padding: 1% 2% 2% 2%;
+}
+.mid{
+    background-color: white;
+    border-width: 10px;
+
+    padding: 3% 2% 3% 2%;
+    border-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+/*.form-row{
+    padding:1% 2% 1% 2%;
+}*/
+.block{
+    display: inline-block;
+    text-align: left;
+    padding: 1% 4% 1% 4%;
+}
+form h3{
+    display: block;
+    padding: 1% 4% 1% 4%;    
+}
+.block label{
+    display: block;
+}
+input{
+    padding: 2%;
+    margin: 0;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    border-radius: 5px;
+    width: 10rem;
+}
+
+/*
+input:invalid{
+  border: 2px solid red;
+  box-shadow: none;
+}
+input:valid{
+    border: 2px solid green;  
+}
+input:indeterminate{
+    border: 1px solid rgba(0, 0, 0, 0.582);
+}
+*/
+input:focus{
+    border: 2px solid rgb(88, 88, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 89, 255, 0.568), 0 3px 10px 0 rgba(0, 89, 255, 0.486);
+}
+.bot{
+    padding: 2%;
+    text-align: center;
+}
+.bot .btn{
+    font: 1.3rem var(--cool-font);
+    color: rgb(107, 28, 28);
+    padding: 1% 2% ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    background-color:rgba(255, 159, 80, 0.788);
+    border-radius: 4px;
+    margin-bottom: 2%;
 }
